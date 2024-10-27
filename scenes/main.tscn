@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://bctxa5pekwl1v"]
+[gd_scene load_steps=6 format=4 uid="uid://bctxa5pekwl1v"]
 
 [ext_resource type="Texture2D" uid="uid://btttujkhbxq3j" path="res://assets/PixelVillageTaleFree/Land/GrassWaterSand copy.png" id="1_c4o16"]
 [ext_resource type="PackedScene" uid="uid://b3n3s4pevhh71" path="res://scenes/player.tscn" id="2_yphy0"]
+[ext_resource type="PackedScene" uid="uid://c1qhs8xxiprf6" path="res://scenes/zombie.tscn" id="3_fw4b2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3l6q1"]
 texture = ExtResource("1_c4o16")
@@ -181,3 +182,6 @@ zoom = Vector2(3, 3)
 [node name="Player" parent="." instance=ExtResource("2_yphy0")]
 position = Vector2(-24, -27)
 motion_mode = 1
+
+[node name="Zombie" parent="." instance=ExtResource("3_fw4b2")]
+position = Vector2(-60, -27)
