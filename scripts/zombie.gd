@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 @export var speed = 120 # How fast the player will move (pixels/sec).
 
 const MAX_HEALTH := 20.0
