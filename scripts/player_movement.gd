@@ -19,6 +19,7 @@ func _physics_process(delta):
 	
 	var input_direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	
+	
 	# Apply any changes to velocity
 	velocity = velocity.move_toward(input_direction*max_speed, (1.0 / acceleration_time) * delta * max_speed)
 	
@@ -27,6 +28,8 @@ func _physics_process(delta):
 	
 	if input_direction.x && sign(input_direction.x) != sign(velocity.x):
 		velocity.x *= 0.75
+	
+	
 	
 	# Reassign velocity and move the player
 	player.velocity = velocity

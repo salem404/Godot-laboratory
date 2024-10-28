@@ -5,7 +5,10 @@ extends Node
 
 var last_facing_direction := Vector2(0, -1)
 
-func _physics_process(delta: float) -> void:
+func _ready() -> void:
+	animation_tree.active = true
+
+func _physics_process(_delta: float) -> void:
 	
 	var idle = !player.velocity
 	
@@ -14,3 +17,4 @@ func _physics_process(delta: float) -> void:
 	
 	animation_tree.set("parameters/Walk/blend_position",last_facing_direction)
 	animation_tree.set("parameters/Idle/blend_position",last_facing_direction)
+	animation_tree.set("parameters/Shoot/blend_position",last_facing_direction)

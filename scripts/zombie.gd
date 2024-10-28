@@ -13,6 +13,6 @@ func damage(attack_damage):
 func _ready() -> void:
 	health = MAX_HEALTH
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	
 	move_and_slide()
