@@ -84,4 +84,4 @@ states/Shoot/position = Vector2(625, 85)
 states/Walk/node = ExtResource("1_frpro")
 states/Walk/position = Vector2(462, 47)
 transitions = ["Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_2xhqy"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_uj2rh"), "Start", "Walk", SubResource("AnimationNodeStateMachineTransition_y5q8d"), "Walk", "Shoot", SubResource("AnimationNodeStateMachineTransition_2laa0"), "Idle", "Shoot", SubResource("AnimationNodeStateMachineTransition_6wve3"), "Shoot", "Idle", SubResource("AnimationNodeStateMachineTransition_6vnl4"), "Shoot", "Walk", SubResource("AnimationNodeStateMachineTransition_nr54s")]
-graph_offset = Vector2(-103, -3)
+graph_offset = Vector2(226.905, -3)
